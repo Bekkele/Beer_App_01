@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lego</title>
+   
+    <!-- Axios for making HTTP requests.  -->
+    <script src="https://unpkg.com/axios@0.24.0/dist/axios.min.js"></script>
+     
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+    <div class="wrapper">
+    <header>
+      <img src="img/logo.png" id="logo">
+    </header>
+   <div class="siteName">
+         <h1> Roll The Die For a Random Minfigure </h1>
+
+   </div>
+  
+    <div class="diceRoll">
+  <!-- gif from https://www.jiviteshdhaliwal.com/blog/tag/uncertainty+in+games  -->
+        <img  src="img/image-asset-1.png" 
+          id="hiddenimage"  
+          onclick="randomFigure()"/>
+    </div>
+
+    <div id="resultStats" class="hideOne hideTwo">
+      <div id="stats">
+             
+        </div>
+      
+        </div>
+        
+    </div>
+      
+	<script src="script.js">
+  </script>
+      
+  </body>
+</html>
