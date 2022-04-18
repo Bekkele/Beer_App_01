@@ -1,34 +1,100 @@
 body{
-  /* img from https://wallpapersafari.com/lego-brick-wallpaper/ */
-  background-image: url("img/legobkgrnd.jpg");
-  /* background: rgba(255, 255, 255, 0.1); */
-  position: relative;
-  padding: 120px;
-  font-family: Arial;
+  padding-left: 60px;
+  padding-right: 60px;
+  background: rgb(253, 253, 217);
+  font-family: Arial, Helvetica, sans-serif;
+  /* background:url(beer.gif); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur( 4px );
 }
-.wrapper{
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+body {
+    margin: 0;
+    overflow: hidden;
+    
 }
-header{
-  display:flex;
-  justify-content: flex-start;
+
+#floatingbubbles {
+    width: 100%;
+    height: 100%;
 }
-#logo{
-margin-top: -50px;
-margin-bottom: 100px;
+
+.flex-nav{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    position: relative;
+    padding:30px;
+}
+ .navLogo{
+   position: absolute;
+   padding: 15px;
+   top: 0;
+   left: 0;
+}
+.navLogo img{
+    width:60px; 
+}
+
+.navItems img{
+    width: 26px;
+}
+.navItems a{
+    padding: 0 30px;
+    transition: all 2s;
+}
+.navItems a:hover{
+    /* filter:invert(1); */
+    background: rgb(228, 211, 59);
+}
+.tagLine{
+    text-align: center;
+    font-size: 25px;
+}
+
+.cards{
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+.cards img{
+    width: 100%;
+}
+.cards p{
+    text-align: center;
+}
+.card1, .card2, .card3{
+align-items: center;
+align-self: center;     
+border-radius: 20px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+transition: 0.3s;
 width: 250px;
 }
-.siteName{
-  display:flex;
-  justify-content: center;
-  color: black;
+
+.card1, .card2,.card3{
+background: rgb(246, 255, 197);
 }
-.siteName h1{
-  background:white;
-  padding: 5px;
+.card1:hover,.card2:hover,.card3:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.404);
 }
+.mobileNavItems{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 #resultStats.hideOne, 
@@ -81,7 +147,65 @@ position: relative;
   background: white;
   object-fit: contain;
 }
+@media (max-width: 1000px) {
+    body{
+        padding: 0 !important; 
+    }
+    a{
+        text-decoration: none;
+    }
+    
+    .navLogo{
+        position:relative;
+        top: auto;
+        left: auto;
+     }
+     .navLogo img{
+        width: 100px; 
+    }
+    .tagLine{
+        text-align: center;
+        font-size: 20px;
+        font-family: cursive;
+        
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-direction: column !important; 
+        gap: 20px;
+        }
 
+    /* BOTTOM NAVIGATION */
+    .navItems{
+        display: none;
+    }
+    .mobileNavItems{
+        display: flex;
+        justify-content: center; 
+        overflow: hidden;
+        background-color:rgb(253, 253, 217); 
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding-top:10px ;
+        padding-bottom:10px ;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+    }
+    .mobileNavItems img{
+        width: 26px;
+    }
+    .mobileNavItems a{
+        padding: 0 30px;
+    }
+    
+   
+
+}
+   
+/*  OLD  */
+/* 
 @media (max-width: 1000px) {
   body{
     padding: 60px;
@@ -113,3 +237,4 @@ position: relative;
 
 }
 
+ */
