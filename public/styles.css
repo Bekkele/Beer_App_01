@@ -9,8 +9,7 @@ body{
   backdrop-filter: blur( 4px );
 }
 body {
-    margin: 0;
-    overflow: hidden;
+    margin: 0; 
     
 }
 
